@@ -1,0 +1,3315 @@
+{
+  "protocol": "Five filename-defined outer folds; four inner group folds for tuning. Scaling is fit inside each training split.",
+  "seed": 42,
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0",
+    "librosa": "1.0.0",
+    "torch": "2.14.1"
+  },
+  "dataset": {
+    "classes": [
+      "006 - Person sneeze",
+      "007 - Helicopter",
+      "008 - Chainsaw",
+      "009 - Rooster",
+      "010 - Fire crackling"
+    ],
+    "clips": [
+      {
+        "path": "006 - Person sneeze/1-26143-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 1,
+        "source": "26143",
+        "sha256": "a86ac569cec6fb0d9362a114f687c41ee172a8194c069917200810563b0f0c3d",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/1-29680-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 1,
+        "source": "29680",
+        "sha256": "f1e2f1787da14668c1c1171aa4608e976d7c413c4258a1e806215bb940eef5a1",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/1-31748-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 1,
+        "source": "31748",
+        "sha256": "1c0b9bf19beff138bcf2513af8660b1e4ee4683de9655e7b1a4f17efb15d0dbb",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/1-47273-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 1,
+        "source": "47273",
+        "sha256": "16defae568cf55422506313316e4a09c5fc4a7580c52bb76ee2d3be002fac16b",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/1-47274-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 1,
+        "source": "47274",
+        "sha256": "b95b1119498f2ca755771fb278c4048ad8f6ba1e2c62324dada4b4a176c10882",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/1-54505-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 1,
+        "source": "54505",
+        "sha256": "fbcb9942b4660f81f99f9777f19aea9aff68f450ca93b63bdda7ea69f7f08d4a",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/1-59324-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 1,
+        "source": "59324",
+        "sha256": "aae5a0fa47e4439688093bb2435b9ebe37524d67462c35e933284b2326a1f35e",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/1-81883-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 1,
+        "source": "81883",
+        "sha256": "d98496748aaaf9430efd0eef9df3d9e887462ff94975bcb543c43f265562175c",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/2-109505-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 2,
+        "source": "109505",
+        "sha256": "7f54c875c9aec0a589df08217b36cb30e191bde937491f85154da4933ae78291",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/2-118104-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 2,
+        "source": "118104",
+        "sha256": "f82b8d57b2667792413315f9c579b4629c09779c2260da36e93ab3272e123b61",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/2-119102-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 2,
+        "source": "119102",
+        "sha256": "18cec17f2a38e9b7418b66686714fccc77801c0dfc5c1eb9fda55c03e4e476e4",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/2-128631-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 2,
+        "source": "128631",
+        "sha256": "e607f30d5312e43b35671ac6fc994abd5a5c8093a1691c0c1bc9d85a9667765f",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/2-130978-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 2,
+        "source": "130978",
+        "sha256": "d6f7a00024de38ec2e06cf05df55f426f894172bec6ce6f2d264793cee74ffa9",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/2-130979-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 2,
+        "source": "130979",
+        "sha256": "606c4f43021cd84faffd7ca3c4c71db81ebc958ab0e9cc64ebdd92aec291c71b",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/2-82538-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 2,
+        "source": "82538",
+        "sha256": "fdb42d38dca9e23b25cfcc515395cccdff34e7c07962b1bb81e64e1675a08a1d",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/2-93030-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 2,
+        "source": "93030",
+        "sha256": "66828772ccb2ac0a132960d1714b2c71862bdab6c700c8051da284f8b117328d",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/3-141684-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 3,
+        "source": "141684",
+        "sha256": "c99298b9905f67af1b6cb2cfd1f297f365b2579d8cbcae0326121036c29c62e0",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/3-142601-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 3,
+        "source": "142601",
+        "sha256": "43d0870357ab4e469dd3bf72ce84c6d9cd85464654499eaa3e3e328d64bdf557",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/3-142605-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 3,
+        "source": "142605",
+        "sha256": "fd17d00ff40411bdc295e2acf296d313c17fd765e4f9b1727deab59b7711bbff",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/3-143119-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 3,
+        "source": "143119",
+        "sha256": "160374edb4a7c5fb1728a8742bbaaa423e29b873e6877c8aa20235f73f022108",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/3-144692-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 3,
+        "source": "144692",
+        "sha256": "bc2fb41925e0ed9ded11bf3178cd641c71038d44b87a6eaff79a4eec2615957e",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/3-148330-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 3,
+        "source": "148330",
+        "sha256": "ad3d7ba7a9c7bb5e0716fa1efb7e262df84965318dcec003d995af5ea7e93a2e",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/3-150231-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 3,
+        "source": "150231",
+        "sha256": "02f6e2cc3472eaf8d4155bd68fb2dc17d3e4a4ad892f625c71db9d95fb80bd09",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/3-156558-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 3,
+        "source": "156558",
+        "sha256": "8b94cac071988c93838fee73768378823c12eb56027280026ac73ebbd8ce6342",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/4-156843-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 4,
+        "source": "156843",
+        "sha256": "d36738df4fcc3a1702ef3f2d1ef94f1794cebd1c91ac6e3377ab21120b4503ed",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/4-156844-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 4,
+        "source": "156844",
+        "sha256": "ea25dd108293896632b86382b3f8ed11744ff1e21a483f21d7ae22b12f09f52c",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/4-157297-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 4,
+        "source": "157297",
+        "sha256": "968eb631a94910ee0a2a6d22046fe0f6a0cbb084950fb0e2e0ba37a8a3590b9e",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/4-167642-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 4,
+        "source": "167642",
+        "sha256": "ae73ee8ead93a8be9877761100b557e8d782f582be6de70e1e4b2f649135a803",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/4-171519-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 4,
+        "source": "171519",
+        "sha256": "cd19bae2fae6865ffa3f24cf5c1d01f8d988d4e79f6dacd224a793755d5b1bfd",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/4-184434-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 4,
+        "source": "184434",
+        "sha256": "51d3f9b556dc68fe0e102b79a207b6432570524d6b0c908b6b0e8157f33b3013",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/4-185415-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 4,
+        "source": "185415",
+        "sha256": "f57bb7b39089ac8f548fd4d2d8d630fd74a70e5db0189c5c570bf809ba7e6839",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/4-185619-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 4,
+        "source": "185619",
+        "sha256": "5ba3e88165661112370c1a6aed921037b43287ca1eed61f8e4e2d2ba42143eee",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/5-187979-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 5,
+        "source": "187979",
+        "sha256": "c7bd7cdd351ec46ab7442c51c9d6204f1c0d4b1970cfd9e5a99963719203a551",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/5-194533-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 5,
+        "source": "194533",
+        "sha256": "7c11b5fecfbdee5aceeec6935221cd1f76f7172172464a3fa2b6919ac3825621",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/5-201274-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 5,
+        "source": "201274",
+        "sha256": "ca6cb49980d1eee33c6cc72b356c7d0872bc5ec6cde831cf153a77c0496e43b7",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/5-202220-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 5,
+        "source": "202220",
+        "sha256": "990e9fce66846ce10f2e87cfe6517657c7440fce0d736878917888f436184140",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/5-220026-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 5,
+        "source": "220026",
+        "sha256": "f8ecba7c41fd555d557dbe73ed20f8a582c6cb61667fb808ad7fdbdcecde8e4a",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/5-220027-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 5,
+        "source": "220027",
+        "sha256": "524f05fa522246a05cee9e49933cd4b5103a435b385e52d8a1b3b91d610921da",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/5-221518-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 5,
+        "source": "221518",
+        "sha256": "f678971564b23e50f8636d478a858d209d16cad95130d14255989397376f1392",
+        "label": 0
+      },
+      {
+        "path": "006 - Person sneeze/5-221593-A.ogg",
+        "category": "006 - Person sneeze",
+        "fold": 5,
+        "source": "221593",
+        "sha256": "34b84e8430f06ec73b0344dbbf45752fe89a8d34fbf25d34696e354d31351995",
+        "label": 0
+      },
+      {
+        "path": "007 - Helicopter/1-172649-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 1,
+        "source": "172649",
+        "sha256": "18721387d779a17ca29ef3628666824e48ce9318a8ec6296facd16396f6bfd7f",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/1-172649-B.ogg",
+        "category": "007 - Helicopter",
+        "fold": 1,
+        "source": "172649",
+        "sha256": "3c30e9b9ee859460159a9e90f1f9c1839a62c32c6e1f0efcc0958ea83eb8c0c2",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/1-172649-C.ogg",
+        "category": "007 - Helicopter",
+        "fold": 1,
+        "source": "172649",
+        "sha256": "420dee8cca40ebb7d41b305806fb8e88c13b7733051413d2851265b28a8740fb",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/1-172649-D.ogg",
+        "category": "007 - Helicopter",
+        "fold": 1,
+        "source": "172649",
+        "sha256": "9afb264bb837faf6104427d3028b79125a2f6bdd5a2a7bbfe5201975b9cbda7c",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/1-172649-E.ogg",
+        "category": "007 - Helicopter",
+        "fold": 1,
+        "source": "172649",
+        "sha256": "3520f813101cd72901229f5a6712d1501034d4b4ab1e8ae5f9a0e55167623a7a",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/1-172649-F.ogg",
+        "category": "007 - Helicopter",
+        "fold": 1,
+        "source": "172649",
+        "sha256": "fffed169c6f537d48f540253f66d29622ca6baa89a165607cbf542e6aa130298",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/1-181071-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 1,
+        "source": "181071",
+        "sha256": "205ef04368b2c4abaa2c19088614b6036ade5a01b521affc7441821b512a42ae",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/1-181071-B.ogg",
+        "category": "007 - Helicopter",
+        "fold": 1,
+        "source": "181071",
+        "sha256": "314e61be26866ab8c3fe89ff9789416fbc30f5a4123f10cdf79148ef6b4d6111",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/2-188822-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 2,
+        "source": "188822",
+        "sha256": "1d3a16e4b016e307f7040b892bb4cf937b44d8c76e8ed33ba849c42ebd0ff818",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/2-188822-B.ogg",
+        "category": "007 - Helicopter",
+        "fold": 2,
+        "source": "188822",
+        "sha256": "672eb21bbac70c376f99d92d2423b9d35afdfc9a9f91248844777fd8a3dea165",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/2-188822-C.ogg",
+        "category": "007 - Helicopter",
+        "fold": 2,
+        "source": "188822",
+        "sha256": "e86c4b38973a46d6732cfe60708529240e7c2cd98c40b12c3306f17302b953ea",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/2-188822-D.ogg",
+        "category": "007 - Helicopter",
+        "fold": 2,
+        "source": "188822",
+        "sha256": "8f23e7dc3e9781105f6ccf4adefa13213a9fa41ab8b45a17b3d37b600662e49c",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/2-37806-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 2,
+        "source": "37806",
+        "sha256": "e5bfe1b66f51f8ddbecebe501bcbfa8bfef8ef8ba176410b966e003b77956790",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/2-37806-B.ogg",
+        "category": "007 - Helicopter",
+        "fold": 2,
+        "source": "37806",
+        "sha256": "7478a4ee369148f78fd4ef98865041cda87d0e656f04247d846e9ca4b7026d41",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/2-37806-C.ogg",
+        "category": "007 - Helicopter",
+        "fold": 2,
+        "source": "37806",
+        "sha256": "f00b12f712b2afb4c19b47d855101e8bd30337c5d9a0f8116adfdc156d6134af",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/2-37806-D.ogg",
+        "category": "007 - Helicopter",
+        "fold": 2,
+        "source": "37806",
+        "sha256": "1aedf4efbbaa30a8cfcad5e9b3968ff480486d43173146de5b1670897558414a",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/3-150979-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 3,
+        "source": "150979",
+        "sha256": "0369bf45b4d68b6962ca284f1302a490c5ff74273fdcc490b447fbcd4f132413",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/3-150979-B.ogg",
+        "category": "007 - Helicopter",
+        "fold": 3,
+        "source": "150979",
+        "sha256": "d0cd6d0195b3aeabce03f1ae5c3954965fd4c78b58cad8288d2e1a13743269f1",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/3-150979-C.ogg",
+        "category": "007 - Helicopter",
+        "fold": 3,
+        "source": "150979",
+        "sha256": "2969a134434bf9f13d560047dfd446be35659898e2269d1f609650564a7cec27",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/3-154926-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 3,
+        "source": "154926",
+        "sha256": "eed0f9bed0ab30dbd5b59d80f39dd19c469cae2115b616d4ad90258463e177fc",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/3-154926-B.ogg",
+        "category": "007 - Helicopter",
+        "fold": 3,
+        "source": "154926",
+        "sha256": "addbf922c55b394d2190724944579b1924b07af74bd69fdb40eab022032d0b8c",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/3-68630-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 3,
+        "source": "68630",
+        "sha256": "b935b8b95b2ced4b50d36dba7d74dace1109f7c262edc54855d2bcd01e414f6a",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/3-68630-B.ogg",
+        "category": "007 - Helicopter",
+        "fold": 3,
+        "source": "68630",
+        "sha256": "59327320e35212bb364fa5560c8666f7f16ed31bd15d037c399257ef8bd48a75",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/3-68630-C.ogg",
+        "category": "007 - Helicopter",
+        "fold": 3,
+        "source": "68630",
+        "sha256": "258e270572c5b9f753603dd2a0100f897f48bdf2d99c8b332c6c53f3fe9c2c3b",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/4-125929-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 4,
+        "source": "125929",
+        "sha256": "343aaa300a587446778eda13c387a3b71efcfe8de321798404f1401076c933c3",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/4-161579-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 4,
+        "source": "161579",
+        "sha256": "bbc91d4764a011e46b353f3115eece9e5c59e6401ac550c017dd55edc386a3ea",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/4-161579-B.ogg",
+        "category": "007 - Helicopter",
+        "fold": 4,
+        "source": "161579",
+        "sha256": "1c8285a21e599196d713e7146610dfe8028bad6b0145714d7c7581f725d8327b",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/4-175000-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 4,
+        "source": "175000",
+        "sha256": "ae04835e3ab5da73eae7eed629db339913b19714bbea76b6264d037ea90a8e3f",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/4-175000-B.ogg",
+        "category": "007 - Helicopter",
+        "fold": 4,
+        "source": "175000",
+        "sha256": "c4d0e4ffb7a1e1de11fa179406c2503e95d0c59d7f3d9c7e0accbe680dd3166b",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/4-175000-C.ogg",
+        "category": "007 - Helicopter",
+        "fold": 4,
+        "source": "175000",
+        "sha256": "9c8330304cb7d48fcd8ba91e1ebb153aedd911fda3319d443e1068d60ccef4d8",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/4-193480-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 4,
+        "source": "193480",
+        "sha256": "e74947c134b85307abe25979caf64aa351f667f43b6c3cb0315decf1445a3dc9",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/4-193480-B.ogg",
+        "category": "007 - Helicopter",
+        "fold": 4,
+        "source": "193480",
+        "sha256": "84fe14512511992a28180197d493b2cfe42bc5daeba92ac5845cfa33f83009c1",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/5-177957-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 5,
+        "source": "177957",
+        "sha256": "d92cce21f5b4ac08d9b1571d391a0179ccf5746b27c8e023945134c4f9701c79",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/5-177957-B.ogg",
+        "category": "007 - Helicopter",
+        "fold": 5,
+        "source": "177957",
+        "sha256": "1840964b3b259af9f698f493da0ce42faf3fc7d5007be749ed065152134104ce",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/5-177957-C.ogg",
+        "category": "007 - Helicopter",
+        "fold": 5,
+        "source": "177957",
+        "sha256": "e9df881427507dc8f56d86769415aa40d0f03346f9a7c25c0c8d6e16510fee7b",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/5-177957-D.ogg",
+        "category": "007 - Helicopter",
+        "fold": 5,
+        "source": "177957",
+        "sha256": "50db3ec4f8059f3231a05552460c8d0de5ab721929a16c4f5769391f4ae848d3",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/5-177957-E.ogg",
+        "category": "007 - Helicopter",
+        "fold": 5,
+        "source": "177957",
+        "sha256": "83fac2e6a1c640b5cc6180364457bd659ecfade2f02c889f7f958747d553cb48",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/5-191131-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 5,
+        "source": "191131",
+        "sha256": "8f9ff1340b140a52ad41bed7de9be1354b2358a181a97694f76a0c0f693eef6d",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/5-205898-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 5,
+        "source": "205898",
+        "sha256": "8c96dcca0654f4ba4f730225f14f5f75e53e59193984ebf7704a2ee204b2b8c6",
+        "label": 1
+      },
+      {
+        "path": "007 - Helicopter/5-220955-A.ogg",
+        "category": "007 - Helicopter",
+        "fold": 5,
+        "source": "220955",
+        "sha256": "dc97b407ad85795e18cf7d70e334ee49dd9c017807c1de053cbed7f1f76b062b",
+        "label": 1
+      },
+      {
+        "path": "008 - Chainsaw/1-116765-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 1,
+        "source": "116765",
+        "sha256": "9c04a21b23e8e236f2b3721018a1a3ac717aba78c96b8249b64dbaff93ee2c63",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/1-19898-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 1,
+        "source": "19898",
+        "sha256": "ae30f26d2bd6e34dffab9e6595b12d7e899cbd9894d0601f68cb19deb347256f",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/1-19898-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 1,
+        "source": "19898",
+        "sha256": "1672bfa0a9510d3b29c01fb40378480bceeb3b9bef4c44a4dc46f3e0d3dbd4e5",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/1-19898-C.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 1,
+        "source": "19898",
+        "sha256": "680ae46b21dad1a85f37c196cab7a4df22c75a7cc8a08fdfc94655a83d44160e",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/1-47250-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 1,
+        "source": "47250",
+        "sha256": "61bcb40af6d8f38a2847156c48e3399eca7a6fbd42f15c723b83ec8265deb3ad",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/1-47250-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 1,
+        "source": "47250",
+        "sha256": "a6f8e9aa1a9f404415b59faf1fb90087806a718552791eb9a1aa1d503576e7c5",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/1-64398-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 1,
+        "source": "64398",
+        "sha256": "1e0b837a9c2abc35c877fed0e5f74d77fd5fa57c3a950b3980feffabc5451152",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/1-64398-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 1,
+        "source": "64398",
+        "sha256": "e93ee3ff9576b99afd76a8c747bab3ceee5519f0345b3201d2859c2c52845608",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/2-50667-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 2,
+        "source": "50667",
+        "sha256": "7201133c16f5db3e365110ee9436ad6ecd07bf9ea3575d5a17606735102f5d3c",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/2-50667-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 2,
+        "source": "50667",
+        "sha256": "7977abb3e1a819816261ae806d1ae7ef5e4dfde3ae20ec3d685ec523cbd55287",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/2-50668-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 2,
+        "source": "50668",
+        "sha256": "4f8a62e45f099f955c0905196218527f72ab9de65f17474abab01152581c030c",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/2-50668-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 2,
+        "source": "50668",
+        "sha256": "562b8a429ff28852a1d505a6f4c85fd31bc06a11503c6932cdaa3b5c1f968351",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/2-68391-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 2,
+        "source": "68391",
+        "sha256": "71ac77013dd46244112caf32b867f78e19ab8c34cd3db22c5192fdebb9d1c50e",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/2-68391-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 2,
+        "source": "68391",
+        "sha256": "d444f1239da8b3a7e4770952c18a85c137840e1c89a89a78a66241775a0a6107",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/2-77945-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 2,
+        "source": "77945",
+        "sha256": "f9723f6d5bc1c0e4b4e092c75dc2ccf564b93dd0cc7ecc530ee27015d46db952",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/2-77945-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 2,
+        "source": "77945",
+        "sha256": "4d9c3ad0f58db50f2a586611cb46b0d9eb3383c4cade79c4e25f798bc0f097f0",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/3-118656-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 3,
+        "source": "118656",
+        "sha256": "7d518284a11b2f0ac0158196b170d0a1a383f1ca47169ef0f6f6b081a82df883",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/3-118657-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 3,
+        "source": "118657",
+        "sha256": "584619c5e916894040e0bf8e2d8919157db621ae66f5f5fdadcd961515cce203",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/3-118657-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 3,
+        "source": "118657",
+        "sha256": "aafd39ac819af509c8773907af84784f8b4b394573daaf74cc6856b2421a518c",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/3-118658-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 3,
+        "source": "118658",
+        "sha256": "896b7aa420282e8cc7a97625587d42b06349c3c45f023833c2294bb4b2b70b6c",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/3-118658-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 3,
+        "source": "118658",
+        "sha256": "34c42043268d0a824f78bbedb37f34515d1b1f0460af1288f4ad161d4072e79a",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/3-118972-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 3,
+        "source": "118972",
+        "sha256": "862976e191d0a0de259478856c827b3cb50eb797a67904f6ff63ef6c9f1d6fcd",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/3-118972-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 3,
+        "source": "118972",
+        "sha256": "e0bf3e16d3abfe28450d4ee0507c95e0af6ece9e9135386c194b5e0e01030796",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/3-165856-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 3,
+        "source": "165856",
+        "sha256": "b94c831aff8b98c23018b6d71463bb598f48d2e1e354c6abb291a21ef62a568c",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/4-149294-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 4,
+        "source": "149294",
+        "sha256": "ccd718cebc262c7c4586a737836363f1586990f06b06f91fb186f9672533595a",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/4-149294-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 4,
+        "source": "149294",
+        "sha256": "f92ef72bf864fb37520423f133be5a437733044504354c5190ef0949a9750ce8",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/4-157611-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 4,
+        "source": "157611",
+        "sha256": "d981f297ba04d462c4251fbc138930782deefb55a62c5c71cbed2823c676724b",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/4-157611-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 4,
+        "source": "157611",
+        "sha256": "359352994973481ba17aa2191ad96fc60a9e9e7fb6a74c074bbcaf95833d33b4",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/4-165823-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 4,
+        "source": "165823",
+        "sha256": "9f65f85faa3a5da38a82d6601a1e01a3b6863f62a6887cbbb78d115504e009f1",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/4-165823-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 4,
+        "source": "165823",
+        "sha256": "96a3d266ac9b0858070ed2241e5e640e8857fc6b54331daa81503d0987b44dcb",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/4-169127-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 4,
+        "source": "169127",
+        "sha256": "77356dffa310640817ab839fe98795489622540acb40229bc9a0fce6f72e3b21",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/4-169127-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 4,
+        "source": "169127",
+        "sha256": "15e02f008fc347c3034a334491c31058bf6786f5497342f515e12e70cc1cf928",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/5-170338-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 5,
+        "source": "170338",
+        "sha256": "f7d38645c8b176f0195d58d61948834112c5f3a500190fa54381b8345ca6b704",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/5-170338-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 5,
+        "source": "170338",
+        "sha256": "db880eab55867672b4b91f211ebb9428b67099ae06ccc21f6179c72d1c85611a",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/5-171653-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 5,
+        "source": "171653",
+        "sha256": "4173d32f9fdc7cf2cf514990ef8f25b2f90ff7958f47117218f8a628cfff8c6a",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/5-185579-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 5,
+        "source": "185579",
+        "sha256": "cd512350a2328a17436beceebd6663725616c4debb5e88d7ce2a5f342b2cf351",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/5-185579-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 5,
+        "source": "185579",
+        "sha256": "9f10274512bef18e7a173e30dc8bcf8a1b84bb330fe38bb2d77b15fc800b091d",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/5-216370-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 5,
+        "source": "216370",
+        "sha256": "62cde0b362394896cf8320ed769270ca76de153cf4a6705dddeb3990bbd3477d",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/5-216370-B.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 5,
+        "source": "216370",
+        "sha256": "af55e85493734557c1093400c072c20cade10838912cdc2dd3fb75354a07cace",
+        "label": 2
+      },
+      {
+        "path": "008 - Chainsaw/5-222524-A.ogg",
+        "category": "008 - Chainsaw",
+        "fold": 5,
+        "source": "222524",
+        "sha256": "69aa51889c306ef0ea4fb90a08ff98495c0afeafcfc1913975eeb1aa4345c724",
+        "label": 2
+      },
+      {
+        "path": "009 - Rooster/1-26806-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 1,
+        "source": "26806",
+        "sha256": "f8f0b91652913afd46ab5cad5885d9ed841a80dee504e02e4a56edee89e4d53c",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/1-27724-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 1,
+        "source": "27724",
+        "sha256": "f940f55442f686fb21b890ac73cd70c31fde534d467ed63f19144e335cf7a3e9",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/1-34119-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 1,
+        "source": "34119",
+        "sha256": "107325ed1fee9fc2ce96c4b5bb37c010b338438372665e1ecd1cb015c90b7d41",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/1-34119-B.ogg",
+        "category": "009 - Rooster",
+        "fold": 1,
+        "source": "34119",
+        "sha256": "cedf17a46d1d66a6af16ed37f9bc1e0a1e0041b76ecce5c75ffdc18948135a4c",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/1-39923-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 1,
+        "source": "39923",
+        "sha256": "cdb9ac8b410e29585bf1a26bc0691f5e8a2347dfb8995f5b4e726dc5ed9e2cd2",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/1-40730-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 1,
+        "source": "40730",
+        "sha256": "49f37cf6914577e40269f343b2274d3f7349d12de1bd2ba5499f5a5b37c27a26",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/1-43382-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 1,
+        "source": "43382",
+        "sha256": "67210307bed930220d61484184a7177a5f4872c8802778e8e7997e711e3988fb",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/1-44831-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 1,
+        "source": "44831",
+        "sha256": "a1828e8df5242345d7975d9a81d5f925156470c599949ca6262c64cfe8f28e98",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/2-100786-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 2,
+        "source": "100786",
+        "sha256": "9f3f867fc3428d6e967a7984ecdc7097d1a41a5bb4bc9de943fc43bee35bdc4c",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/2-65750-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 2,
+        "source": "65750",
+        "sha256": "fe5c10fd1d6e8beaf87d9e6e3cbfd85ca65b8f3c9a6b2ef993e7465f885d75da",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/2-71162-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 2,
+        "source": "71162",
+        "sha256": "7aa950a60f197266a5853bfd087cddd5c0405b66dfd8294fca7f48ff0aa7da23",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/2-81270-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 2,
+        "source": "81270",
+        "sha256": "36ae44f5b9fbcc03e16410d0910115809b3f0a19ab85c5fcd1d94fc9305566b5",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/2-95035-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 2,
+        "source": "95035",
+        "sha256": "37856a0a3682694218cf3166bbfa8229f6a37d228e3f6bd01b939a1e84fe430f",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/2-95258-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 2,
+        "source": "95258",
+        "sha256": "6413602317d90dd01fe1732464e12b67467bfe433fd09d3b5f54f27955f70a10",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/2-95258-B.ogg",
+        "category": "009 - Rooster",
+        "fold": 2,
+        "source": "95258",
+        "sha256": "6e5732eabbf36c11ead1eca92cbc7579985c04cbd84c900ec13f9223ffe00c32",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/2-96460-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 2,
+        "source": "96460",
+        "sha256": "98b104035a598d8dcc285d664fa4fc3028dfee30bf9502b92b3215acd63eb8ce",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/3-107219-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 3,
+        "source": "107219",
+        "sha256": "0565d9f8f8cc88083ebc801650be1c3e691bad4dddd14ce9b2341a72fbe582e4",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/3-116135-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 3,
+        "source": "116135",
+        "sha256": "40f5a9dc8ec38920563a86f1c098be9e8b74458c8a4d7e0e1590cacb78f42368",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/3-134049-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 3,
+        "source": "134049",
+        "sha256": "95771aa918b6aa8c595d7c79ce5927d7df4d064ba54a68a8ca4dd18e00f2657d",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/3-137152-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 3,
+        "source": "137152",
+        "sha256": "b771b3305bdd445b5fd0664da27ce4969a85652aaac89bffdffeee645c01d1c6",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/3-145382-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 3,
+        "source": "145382",
+        "sha256": "a992f964a7ade35d13a4e1ab3184bf7b0b29ccf2268a4647c4f4612db854bc58",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/3-149189-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 3,
+        "source": "149189",
+        "sha256": "e3915c16b214fc38a9ec8fa9261e7f50ef6df7dbcc167fcc17d0c21bfda9ff48",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/3-154957-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 3,
+        "source": "154957",
+        "sha256": "2c973455ce951ebea7006f90fc8d1aa0c9e765dfe980de791ff19caa833a2196",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/3-163288-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 3,
+        "source": "163288",
+        "sha256": "dfe3ebdf51d02717957457ed2c01f18ecd87faf35cc30d85f99a389200f32cb7",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/4-164021-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 4,
+        "source": "164021",
+        "sha256": "45181237f6a165a4d0587f99b2fc378e5526a873f3e874f0380df21844af0bab",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/4-164064-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 4,
+        "source": "164064",
+        "sha256": "9da2e9dcdf63eaf5926633eabdb52182252a339d129c5e99a3640c142b7e26d4",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/4-164064-B.ogg",
+        "category": "009 - Rooster",
+        "fold": 4,
+        "source": "164064",
+        "sha256": "620a386c18cc42ed11ee36bbfc26dacaf932adefabd1839ce56179da2eddba62",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/4-164064-C.ogg",
+        "category": "009 - Rooster",
+        "fold": 4,
+        "source": "164064",
+        "sha256": "b95a2cd5b2d4b3c51ab9d72f458802f4fc2386c58cd8d699fe23a5500d8e4ce6",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/4-164859-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 4,
+        "source": "164859",
+        "sha256": "a2ff8f8d32a293a609633420c8f5c27c479f9787a24c01e9a82b2060de38484b",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/4-170078-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 4,
+        "source": "170078",
+        "sha256": "3add42952c2feddd76e0a46078fedf4ae398a4375ba9995892dffb48cc4f3deb",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/4-183487-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 4,
+        "source": "183487",
+        "sha256": "2c1bcf57d592dbe8aa2411331592f378d9ebe317cce8d79d4a8344dd2b9edba8",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/4-208021-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 4,
+        "source": "208021",
+        "sha256": "0048dd3e57ab2317a7082eb93faeaf65792bdea1f30349e21311933067c14556",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/5-194930-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 5,
+        "source": "194930",
+        "sha256": "9d2792f3a2f22a3ae2563b6fec867b04e726478e65da7614c817860293371fbc",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/5-194930-B.ogg",
+        "category": "009 - Rooster",
+        "fold": 5,
+        "source": "194930",
+        "sha256": "f349318088674b955f3c09d5c2473efe8096a2922506667e868ffea21e3d9c67",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/5-200334-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 5,
+        "source": "200334",
+        "sha256": "79fcbf941dd8736784dad2a41875a85430ea06ffdf1dc86bcb33dfb8af8d7027",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/5-200334-B.ogg",
+        "category": "009 - Rooster",
+        "fold": 5,
+        "source": "200334",
+        "sha256": "f21b9a65d83639749aefc1279868f692cbb693706414f1cad38ed50aefd6314a",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/5-200339-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 5,
+        "source": "200339",
+        "sha256": "41c1dd2f34fd67a82fd76f912a4de1f046ceeffe0bbf311af73dcf834f20e1fb",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/5-233160-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 5,
+        "source": "233160",
+        "sha256": "ec9a9a0adad6a9177446f7ba4e025231449d11b030fa809fb506d74a1ee43101",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/5-234879-A.ogg",
+        "category": "009 - Rooster",
+        "fold": 5,
+        "source": "234879",
+        "sha256": "4a2bd9314f6da1f5be45675a4ef12b5c79941f2f9b8429421c26a0c7412b2244",
+        "label": 3
+      },
+      {
+        "path": "009 - Rooster/5-234879-B.ogg",
+        "category": "009 - Rooster",
+        "fold": 5,
+        "source": "234879",
+        "sha256": "e4b8c8bcdfa37ac5296f720ab361d5da8ec93566b54827230a1ba1490d996562",
+        "label": 3
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/1-17150-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 1,
+        "source": "17150",
+        "sha256": "127adc3046def5fddf928b26087129aa44779b94dbad243bd06b560ea90f9894",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/1-17565-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 1,
+        "source": "17565",
+        "sha256": "64d664f83c7bbce246c97f029f0eac0ef23538d27158b14a9a02a30d545c751a",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/1-17742-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 1,
+        "source": "17742",
+        "sha256": "7421f52c317d4a7d6677be0fbc3a530fc62f276badd5e3377f453e36d6a960dd",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/1-17808-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 1,
+        "source": "17808",
+        "sha256": "d057951338e1218c1818efb8830cec6a5844007a195267d7c06042a83c43f648",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/1-17808-B.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 1,
+        "source": "17808",
+        "sha256": "748a01c6caf2d9b2722b23721c31fc5659efd4af95d1eb3b8fefea35b0628b73",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/1-4211-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 1,
+        "source": "4211",
+        "sha256": "e9fb6776ce35fa769e7b5415478cfa1eee6085e83a825403e6e879bbff272f4b",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/1-46272-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 1,
+        "source": "46272",
+        "sha256": "b802be7495b0649e9e1432a742aacd259038a7a08ef3f7f8ffc4cf996efe1404",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/1-7057-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 1,
+        "source": "7057",
+        "sha256": "399b56179d4a7fab58c6ed2a95e866322f4e509cd1b637b605c6a0f206ad46c9",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/2-18766-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 2,
+        "source": "18766",
+        "sha256": "59f9866492fd64d5dc20101ac317e0c0153d1ab8fa41dc196c11bccfd7e4028c",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/2-18766-B.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 2,
+        "source": "18766",
+        "sha256": "1ea5f7642e1bba76233780be741dcb0e609c718c9b1c83e6ed1891a8845655d3",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/2-28314-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 2,
+        "source": "28314",
+        "sha256": "ae741212dc6b3805f8af6ad69abf8d35f4e32ae8a7cbccd55222602d04bf91a6",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/2-28314-B.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 2,
+        "source": "28314",
+        "sha256": "ce89d281c056eb7e81fe881f0eb7b0bf22cda710ee3f2b3e07910f17ec07b9ba",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/2-30322-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 2,
+        "source": "30322",
+        "sha256": "01eda9ac1747076a192367fc473cbdcddd1188e010cafeeb474ed265364cc754",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/2-30322-B.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 2,
+        "source": "30322",
+        "sha256": "49e85734448b99877ba98494d1f3999072dfb7634c3dbb3f31ccebac034cc949",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/2-61311-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 2,
+        "source": "61311",
+        "sha256": "4e1f09e84b67d432bdecd7ca3ec42a8bb5cc31e00b829301e5b2bbedca60a6b6",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/2-65747-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 2,
+        "source": "65747",
+        "sha256": "317a0f83f23754a14de9d5eaad7c1fce0ad6ebfba66adc5c40bcc6f0c70bea48",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/3-104632-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 3,
+        "source": "104632",
+        "sha256": "01d80c74c8b74b1dd68ec40c95ebcb451635739008b06815a1d1bc47dd6c86e2",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/3-104958-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 3,
+        "source": "104958",
+        "sha256": "acc91ea21ff95d771112fe8aeed49b3faa75416824eec2b47051e7d6395be5a2",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/3-120644-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 3,
+        "source": "120644",
+        "sha256": "6ac378df108b3d3015c2a76b115ad026ad98c8cf83b3c37b20a1c7b4d5870b06",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/3-145774-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 3,
+        "source": "145774",
+        "sha256": "c9a81566b3854ff7e335bda54b1fc23816a9391546e48c0d8b2cbb8c79e1ebbe",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/3-147965-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 3,
+        "source": "147965",
+        "sha256": "31459719d16020c703fccbbad6e2d667492a55c42ba0e10fead8638e55b0b9a8",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/3-157187-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 3,
+        "source": "157187",
+        "sha256": "d976c04852623a6d4032e6675259672dea9e706229fc37a87b1f8d7ba592aa83",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/3-158476-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 3,
+        "source": "158476",
+        "sha256": "c5d8d0028e5b6a14a54e90ab4a8af370a878ee06f28a0fe3d77449fc45d1ed2b",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/3-65748-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 3,
+        "source": "65748",
+        "sha256": "593a86deb1a0f0c58439359357840b7112185362ac7e3368ea9587c5190555dd",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/4-164661-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 4,
+        "source": "164661",
+        "sha256": "232be5fcc38c3d89e8a6a4cd8c7e9102c68292b85faec2a91ba7994e97418ca1",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/4-164661-B.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 4,
+        "source": "164661",
+        "sha256": "88f911ad79871960004e27678df32941cf329c8474097318d6cc90777baf3cce",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/4-170247-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 4,
+        "source": "170247",
+        "sha256": "5071ee63d42dc19b5e9b1b174397bfbb49c27a2fa58bc53f46ff67208d0091d9",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/4-170247-B.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 4,
+        "source": "170247",
+        "sha256": "20ba72bb09c4d4de62fa8ab597c7af15490f4af9eb008c7abdd2244914bb8496",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/4-171207-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 4,
+        "source": "171207",
+        "sha256": "717c0f84b26e8bea1deadd402be87641dbfde1fbc6cfed5327f3392de5101b79",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/4-181563-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 4,
+        "source": "181563",
+        "sha256": "28e135b63ec6be21668b28321009cac8ee3b6fcd285cb8dce19e570c385d7237",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/4-182368-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 4,
+        "source": "182368",
+        "sha256": "3bae378de53e0bcc2406ae03db0347390e298480f0c4d5bf52bb51c94c4421a2",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/4-182369-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 4,
+        "source": "182369",
+        "sha256": "35702ae54e99adabb27d433c6e7269fdc7ddd80314161b2b4047fe07246a1caa",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/5-186924-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 5,
+        "source": "186924",
+        "sha256": "b2e41424968b0dc3c0a4c229e36e9f5b0470ae0edea0e489c503bb02deb81084",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/5-189212-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 5,
+        "source": "189212",
+        "sha256": "be4585ea67959475d5cafb6a328129c724b7cf524db147a64381c84430cba703",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/5-189237-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 5,
+        "source": "189237",
+        "sha256": "49a7ca6844763d09c519fe968a37f0c1fded8d2731c394e1f0f70393a1a617f3",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/5-193473-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 5,
+        "source": "193473",
+        "sha256": "f147576f596d70b00b558b1315c23ae2e120432c99134064543ea7f463e294c6",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/5-193473-B.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 5,
+        "source": "193473",
+        "sha256": "3680aefae1e63cb0ce7f6a7b2a0786206a5001608daa3a68e486e354b2f03e62",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/5-213802-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 5,
+        "source": "213802",
+        "sha256": "a830f5df89930228d39ff37a729d5ec126769a4109a2b9f7f12ec6ab55c3f35b",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/5-215658-A.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 5,
+        "source": "215658",
+        "sha256": "36623ad44f365f9e0573d806a1beb5a6b312e362b1261a4c381cfb22d8e4a4d1",
+        "label": 4
+      },
+      {
+        "path": "audio-data/010 - Fire crackling/5-215658-B.ogg",
+        "category": "010 - Fire crackling",
+        "fold": 5,
+        "source": "215658",
+        "sha256": "7e752ec16168ac1ab555e9c0bb84831c3754a7dc8e3c78e2b6f73d9c2b75a7ff",
+        "label": 4
+      }
+    ],
+    "sample_rate": 22050,
+    "seconds": 5.0,
+    "n_fft": 1024,
+    "hop_length": 512,
+    "n_mels": 64,
+    "feature_version": 1
+  },
+  "results": {
+    "dummy": {
+      "accuracy": 0.2,
+      "macro_f1": 0.06666666666666667,
+      "confusion_matrix": [
+        [
+          40,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          40,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          40,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          40,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          40,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "006 - Person sneeze": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1-score": 0.3333333333333333,
+          "support": 40.0
+        },
+        "007 - Helicopter": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 40.0
+        },
+        "008 - Chainsaw": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 40.0
+        },
+        "009 - Rooster": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 40.0
+        },
+        "010 - Fire crackling": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 40.0
+        },
+        "accuracy": 0.2,
+        "macro avg": {
+          "precision": 0.04,
+          "recall": 0.2,
+          "f1-score": 0.06666666666666667,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.04,
+          "recall": 0.2,
+          "f1-score": 0.06666666666666667,
+          "support": 200.0
+        }
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "accuracy": 0.2,
+          "macro_f1": 0.06666666666666667,
+          "inner_macro_f1": 0.06666666666666667,
+          "best_params": {}
+        },
+        {
+          "fold": 2,
+          "accuracy": 0.2,
+          "macro_f1": 0.06666666666666667,
+          "inner_macro_f1": 0.06666666666666667,
+          "best_params": {}
+        },
+        {
+          "fold": 3,
+          "accuracy": 0.2,
+          "macro_f1": 0.06666666666666667,
+          "inner_macro_f1": 0.06666666666666667,
+          "best_params": {}
+        },
+        {
+          "fold": 4,
+          "accuracy": 0.2,
+          "macro_f1": 0.06666666666666667,
+          "inner_macro_f1": 0.06666666666666667,
+          "best_params": {}
+        },
+        {
+          "fold": 5,
+          "accuracy": 0.2,
+          "macro_f1": 0.06666666666666667,
+          "inner_macro_f1": 0.06666666666666667,
+          "best_params": {}
+        }
+      ],
+      "fold_accuracy_std": 0.0,
+      "predictions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "logistic": {
+      "accuracy": 0.925,
+      "macro_f1": 0.9251756885090219,
+      "confusion_matrix": [
+        [
+          39,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          34,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          35,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          40,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          0,
+          37
+        ]
+      ],
+      "per_class": {
+        "006 - Person sneeze": {
+          "precision": 0.9512195121951219,
+          "recall": 0.975,
+          "f1-score": 0.9629629629629629,
+          "support": 40.0
+        },
+        "007 - Helicopter": {
+          "precision": 0.85,
+          "recall": 0.85,
+          "f1-score": 0.85,
+          "support": 40.0
+        },
+        "008 - Chainsaw": {
+          "precision": 0.8536585365853658,
+          "recall": 0.875,
+          "f1-score": 0.8641975308641975,
+          "support": 40.0
+        },
+        "009 - Rooster": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 40.0
+        },
+        "010 - Fire crackling": {
+          "precision": 0.9736842105263158,
+          "recall": 0.925,
+          "f1-score": 0.9487179487179487,
+          "support": 40.0
+        },
+        "accuracy": 0.925,
+        "macro avg": {
+          "precision": 0.9257124518613606,
+          "recall": 0.925,
+          "f1-score": 0.9251756885090219,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.9257124518613606,
+          "recall": 0.925,
+          "f1-score": 0.925175688509022,
+          "support": 200.0
+        }
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "accuracy": 0.875,
+          "macro_f1": 0.8704453441295547,
+          "inner_macro_f1": 0.9314409846259691,
+          "best_params": {
+            "logisticregression__C": 10.0
+          }
+        },
+        {
+          "fold": 2,
+          "accuracy": 0.925,
+          "macro_f1": 0.924705882352941,
+          "inner_macro_f1": 0.9146956964604023,
+          "best_params": {
+            "logisticregression__C": 1.0
+          }
+        },
+        {
+          "fold": 3,
+          "accuracy": 0.9,
+          "macro_f1": 0.899607843137255,
+          "inner_macro_f1": 0.8985193659110068,
+          "best_params": {
+            "logisticregression__C": 1.0
+          }
+        },
+        {
+          "fold": 4,
+          "accuracy": 0.975,
+          "macro_f1": 0.9749019607843138,
+          "inner_macro_f1": 0.8871848739495798,
+          "best_params": {
+            "logisticregression__C": 1.0
+          }
+        },
+        {
+          "fold": 5,
+          "accuracy": 0.95,
+          "macro_f1": 0.9511111111111111,
+          "inner_macro_f1": 0.8790069442081826,
+          "best_params": {
+            "logisticregression__C": 1.0
+          }
+        }
+      ],
+      "fold_accuracy_std": 0.03952847075210472,
+      "predictions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        0,
+        4,
+        4,
+        4,
+        4,
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        1,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    "svm": {
+      "accuracy": 0.91,
+      "macro_f1": 0.9101756885090218,
+      "confusion_matrix": [
+        [
+          38,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          33,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          34,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          40,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          0,
+          37
+        ]
+      ],
+      "per_class": {
+        "006 - Person sneeze": {
+          "precision": 0.95,
+          "recall": 0.95,
+          "f1-score": 0.95,
+          "support": 40.0
+        },
+        "007 - Helicopter": {
+          "precision": 0.825,
+          "recall": 0.825,
+          "f1-score": 0.825,
+          "support": 40.0
+        },
+        "008 - Chainsaw": {
+          "precision": 0.8292682926829268,
+          "recall": 0.85,
+          "f1-score": 0.8395061728395061,
+          "support": 40.0
+        },
+        "009 - Rooster": {
+          "precision": 0.975609756097561,
+          "recall": 1.0,
+          "f1-score": 0.9876543209876543,
+          "support": 40.0
+        },
+        "010 - Fire crackling": {
+          "precision": 0.9736842105263158,
+          "recall": 0.925,
+          "f1-score": 0.9487179487179487,
+          "support": 40.0
+        },
+        "accuracy": 0.91,
+        "macro avg": {
+          "precision": 0.9107124518613606,
+          "recall": 0.9099999999999999,
+          "f1-score": 0.9101756885090218,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.9107124518613606,
+          "recall": 0.91,
+          "f1-score": 0.910175688509022,
+          "support": 200.0
+        }
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "accuracy": 0.85,
+          "macro_f1": 0.8476190476190476,
+          "inner_macro_f1": 0.9239705882352942,
+          "best_params": {
+            "svc__C": 100.0,
+            "svc__gamma": 0.001
+          }
+        },
+        {
+          "fold": 2,
+          "accuracy": 0.9,
+          "macro_f1": 0.8984126984126984,
+          "inner_macro_f1": 0.9025224938460232,
+          "best_params": {
+            "svc__C": 100.0,
+            "svc__gamma": 0.001
+          }
+        },
+        {
+          "fold": 3,
+          "accuracy": 0.9,
+          "macro_f1": 0.899607843137255,
+          "inner_macro_f1": 0.8805109587694726,
+          "best_params": {
+            "svc__C": 10.0,
+            "svc__gamma": "scale"
+          }
+        },
+        {
+          "fold": 4,
+          "accuracy": 0.975,
+          "macro_f1": 0.9749019607843138,
+          "inner_macro_f1": 0.8868965919701215,
+          "best_params": {
+            "svc__C": 10.0,
+            "svc__gamma": "scale"
+          }
+        },
+        {
+          "fold": 5,
+          "accuracy": 0.925,
+          "macro_f1": 0.9260130718954249,
+          "inner_macro_f1": 0.8788132000438502,
+          "best_params": {
+            "svc__C": 10.0,
+            "svc__gamma": "scale"
+          }
+        }
+      ],
+      "fold_accuracy_std": 0.04541475531146238,
+      "predictions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        0,
+        4,
+        4,
+        4,
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        1,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    "forest": {
+      "accuracy": 0.865,
+      "macro_f1": 0.864085709928321,
+      "confusion_matrix": [
+        [
+          34,
+          0,
+          0,
+          5,
+          1
+        ],
+        [
+          1,
+          30,
+          7,
+          1,
+          1
+        ],
+        [
+          0,
+          3,
+          36,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          0,
+          37,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          0,
+          36
+        ]
+      ],
+      "per_class": {
+        "006 - Person sneeze": {
+          "precision": 0.85,
+          "recall": 0.85,
+          "f1-score": 0.85,
+          "support": 40.0
+        },
+        "007 - Helicopter": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1-score": 0.8,
+          "support": 40.0
+        },
+        "008 - Chainsaw": {
+          "precision": 0.8372093023255814,
+          "recall": 0.9,
+          "f1-score": 0.8674698795180723,
+          "support": 40.0
+        },
+        "009 - Rooster": {
+          "precision": 0.8604651162790697,
+          "recall": 0.925,
+          "f1-score": 0.891566265060241,
+          "support": 40.0
+        },
+        "010 - Fire crackling": {
+          "precision": 0.9230769230769231,
+          "recall": 0.9,
+          "f1-score": 0.9113924050632911,
+          "support": 40.0
+        },
+        "accuracy": 0.865,
+        "macro avg": {
+          "precision": 0.8655788397648863,
+          "recall": 0.865,
+          "f1-score": 0.864085709928321,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.8655788397648863,
+          "recall": 0.865,
+          "f1-score": 0.8640857099283208,
+          "support": 200.0
+        }
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "accuracy": 0.85,
+          "macro_f1": 0.8254545454545454,
+          "inner_macro_f1": 0.892547427203,
+          "best_params": {
+            "max_features": "sqrt",
+            "min_samples_leaf": 1
+          }
+        },
+        {
+          "fold": 2,
+          "accuracy": 0.85,
+          "macro_f1": 0.8483146591970122,
+          "inner_macro_f1": 0.8485926818279759,
+          "best_params": {
+            "max_features": 0.5,
+            "min_samples_leaf": 1
+          }
+        },
+        {
+          "fold": 3,
+          "accuracy": 0.875,
+          "macro_f1": 0.8744444444444446,
+          "inner_macro_f1": 0.8582544094192701,
+          "best_params": {
+            "max_features": "sqrt",
+            "min_samples_leaf": 2
+          }
+        },
+        {
+          "fold": 4,
+          "accuracy": 0.85,
+          "macro_f1": 0.8474416433239963,
+          "inner_macro_f1": 0.8862762392406355,
+          "best_params": {
+            "max_features": "sqrt",
+            "min_samples_leaf": 2
+          }
+        },
+        {
+          "fold": 5,
+          "accuracy": 0.9,
+          "macro_f1": 0.9014182515111306,
+          "inner_macro_f1": 0.8647750615397675,
+          "best_params": {
+            "max_features": "sqrt",
+            "min_samples_leaf": 1
+          }
+        }
+      ],
+      "fold_accuracy_std": 0.022360679774997918,
+      "predictions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        0,
+        3,
+        0,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        0,
+        4,
+        4,
+        4,
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        1,
+        4,
+        4,
+        4,
+        4,
+        1,
+        4,
+        4
+      ]
+    },
+    "extra_trees": {
+      "accuracy": 0.88,
+      "macro_f1": 0.8796464618344544,
+      "confusion_matrix": [
+        [
+          36,
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          31,
+          8,
+          0,
+          1
+        ],
+        [
+          0,
+          4,
+          35,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          38,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          0,
+          36
+        ]
+      ],
+      "per_class": {
+        "006 - Person sneeze": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1-score": 0.9,
+          "support": 40.0
+        },
+        "007 - Helicopter": {
+          "precision": 0.8378378378378378,
+          "recall": 0.775,
+          "f1-score": 0.8051948051948052,
+          "support": 40.0
+        },
+        "008 - Chainsaw": {
+          "precision": 0.813953488372093,
+          "recall": 0.875,
+          "f1-score": 0.8433734939759037,
+          "support": 40.0
+        },
+        "009 - Rooster": {
+          "precision": 0.926829268292683,
+          "recall": 0.95,
+          "f1-score": 0.9382716049382716,
+          "support": 40.0
+        },
+        "010 - Fire crackling": {
+          "precision": 0.9230769230769231,
+          "recall": 0.9,
+          "f1-score": 0.9113924050632911,
+          "support": 40.0
+        },
+        "accuracy": 0.88,
+        "macro avg": {
+          "precision": 0.8803395035159074,
+          "recall": 0.8800000000000001,
+          "f1-score": 0.8796464618344544,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.8803395035159075,
+          "recall": 0.88,
+          "f1-score": 0.8796464618344543,
+          "support": 200.0
+        }
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "accuracy": 0.875,
+          "macro_f1": 0.8614718614718615,
+          "inner_macro_f1": 0.905782721320647,
+          "best_params": {
+            "max_features": "sqrt",
+            "min_samples_leaf": 1
+          }
+        },
+        {
+          "fold": 2,
+          "accuracy": 0.85,
+          "macro_f1": 0.8468433527257057,
+          "inner_macro_f1": 0.8677019132398389,
+          "best_params": {
+            "max_features": 0.5,
+            "min_samples_leaf": 1
+          }
+        },
+        {
+          "fold": 3,
+          "accuracy": 0.9,
+          "macro_f1": 0.898235294117647,
+          "inner_macro_f1": 0.8581099305751008,
+          "best_params": {
+            "max_features": "sqrt",
+            "min_samples_leaf": 1
+          }
+        },
+        {
+          "fold": 4,
+          "accuracy": 0.9,
+          "macro_f1": 0.8992717086834734,
+          "inner_macro_f1": 0.8714005602240897,
+          "best_params": {
+            "max_features": 0.5,
+            "min_samples_leaf": 1
+          }
+        },
+        {
+          "fold": 5,
+          "accuracy": 0.875,
+          "macro_f1": 0.8777591036414565,
+          "inner_macro_f1": 0.8840666114930822,
+          "best_params": {
+            "max_features": 0.5,
+            "min_samples_leaf": 2
+          }
+        }
+      ],
+      "fold_accuracy_std": 0.020916500663351906,
+      "predictions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        0,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        0,
+        4,
+        4,
+        4,
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        1,
+        4,
+        4,
+        4,
+        4,
+        1,
+        4,
+        4
+      ]
+    }
+  }
+}
